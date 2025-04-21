@@ -1,5 +1,6 @@
 <script setup>
-import HomeBackground from "../components/HomeBackground.vue";
+import NavBar from "./NavBar.vue";
+import Background from "../components/Background.vue";
 
 import { useData } from "vitepress";
 import NotFound from "./NotFound.vue";
@@ -11,10 +12,10 @@ const { page, frontmatter } = useData();
 
 <template>
   <div class="layout-container">
+    <NavBar />
     <NotFound v-if="page.isNotFound" />
     <Home v-if="frontmatter.layout === 'home'" />
     <Page v-else />
-
-    <HomeBackground />
+    <Background />
   </div>
 </template>

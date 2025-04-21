@@ -1,7 +1,7 @@
 <script setup>
 import { ref, unref } from "vue";
 import { useData } from "vitepress";
-import HomeHeroUserAvatar from "./HomeHeroUserAvatar.vue";
+import HomeUserAvatar from "./HomeUserAvatar.vue";
 import AnimationWave from "./AnimationWave.vue";
 
 const { site } = useData();
@@ -25,10 +25,10 @@ function handleMouseLeave() {
 </script>
 
 <template>
-  <div class="home-hero-user">
+  <div class="home-user">
     <div ref="userRef" @mousemove="handleMouseMove" @mouseleave="handleMouseLeave" preserve-3d perspective-1000>
-      <div ref="userContentRef" class="home-hero-user-content">
-        <HomeHeroUserAvatar />
+      <div ref="userContentRef" class="home-user-content">
+        <HomeUserAvatar />
         <div ml-10 flex="~ col justify-center">
           <div text="8 #333" lh-8 font-bold>{{ title }}</div>
           <div text="4 #666" lh-4 mt-4>{{ description }}</div>
@@ -41,14 +41,14 @@ function handleMouseLeave() {
 </template>
 
 <style lang="scss" scoped>
-.home-hero-user {
+.home-user {
   @apply h-120 pt-16;
   @apply relative flex flex-col justify-center items-center;
   background: url("../assets/images/bg-space.jpg");
   @apply bg-no-repeat bg-cover;
-  mask: linear-gradient(to top, transparent, #eaeff5 6%);
+  mask: linear-gradient(to top, transparent, #eaeff5 5%);
 
-  .home-hero-user-content {
+  .home-user-content {
     @apply w-150 h-60 p-4;
     @apply flex flex-row items-center justify-center;
     @apply rounded-5 border-2 border-solid border-#eee;

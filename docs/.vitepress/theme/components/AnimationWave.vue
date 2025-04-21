@@ -1,6 +1,4 @@
-<script setup>
-import "css-doodle";
-</script>
+<script setup></script>
 
 <template>
   <div w-full h-20 absolute bottom-0 left-0>
@@ -39,19 +37,19 @@ import "css-doodle";
 .wave-first {
   @apply top-0% opacity-40;
   animation: wave 47s linear infinite;
-  // animation-delay: 0s;
+  animation-delay: -3s;
 }
 
 .wave-second {
   @apply top-0% opacity-50;
   animation: wave 37s linear infinite;
-  // animation-delay: -10s;
+  animation-delay: -4s;
 }
 
 .wave-third {
   @apply opacity-60;
   animation: wave 27s linear infinite;
-  // animation-delay: -20s;
+  animation-delay: -5s;
 }
 
 @keyframes wave {
@@ -59,7 +57,7 @@ import "css-doodle";
     transform: translateX(0) translateY(0);
   }
   50% {
-    transform: translateX(25%) translateY(50%);
+    transform: translateX(25%) translateY(37.5%);
   }
   100% {
     transform: translateX(50%) translateY(0);

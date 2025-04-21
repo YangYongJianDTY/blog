@@ -1,0 +1,24 @@
+{
+  "compilerOptions": {
+    "baseUrl": "./",
+    "module": "ESNext",
+    "target": "ESNext",
+    "lib": ["DOM", "ESNext"],
+    "strict": true,
+    "esModuleInterop": true,
+    "jsx": "preserve",
+    "skipLibCheck": true,
+    "isolatedModules": true,
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "noUnusedLocals": true,
+    "strictNullChecks": true,
+    "allowJs": true,
+    "forceConsistentCasingInFileNames": true,
+    "types": ["vitepress", "vitepress/client", "pinia-plugin-persist", "pinia"]
+  },
+  "vueCompilerOptions": {
+    "plugins": ["@vue-macros/volar/define-models", "@vue-macros/volar/define-slots"]
+  },
+  "exclude": ["docs/.vitepress/dist", "docs/.vitepress/cache", "node_modules", "docs/src"]
+}

@@ -13,7 +13,8 @@
     "tada",
     "unocss",
     "Attributify",
-    "vuepress"
+    "vuepress",
+    "hmos"
   ],
   "scss.lint.unknownAtRules": "ignore"
 }

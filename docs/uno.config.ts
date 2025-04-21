@@ -1,10 +1,7 @@
 import {
   defineConfig,
   presetAttributify,
-  presetIcons,
-  presetTypography,
   presetUno,
-  presetWebFonts,
   toEscapedSelector,
   transformerDirectives,
   transformerVariantGroup,
@@ -74,11 +71,6 @@ export default defineConfig({
   presets: [
     presetUno(),
     presetAttributify(),
-    presetIcons({
-      scale: 1.2,
-      warn: true,
-    }),
-    presetTypography(),
     presetScrollbar({
       scrollbarTrackColor: "#999",
       scrollbarThumbColor: "#333",

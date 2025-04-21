@@ -10,11 +10,11 @@ const { customTitle, customText } = frontmatter.value;
 const { base } = site.value;
 console.log(base);
 
-import HomeHeroAfter from "../components/HomeHeroAfter.vue";
+import HomeContent from "../components/HomeContent.vue";
 </script>
 
 <template>
   <div class="home-container">
-    <HomeHeroAfter />
+    <HomeContent />
   </div>
 </template>
